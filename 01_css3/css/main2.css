@@ -1,0 +1,17 @@
+@charset "urf-8";
+
+div {
+    border: 1px solid black;
+    margin: auto;
+    width: 650px;
+    height: 450px;
+    padding: 20px 20px 0 20px;
+}
+
+.h21 {
+    color: blue;
+}
+
+span {
+    color: red;
+}
