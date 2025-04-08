@@ -1,0 +1,16 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕","malgun gothic",sans-serif}
+*{margin: 0; padding: 0;}
+p{text-align: justify; font-size: 12px;}
+div{width: 380px; border: 2px solid #0e21c5; padding: 10px; margin: auto;}
+h1{font-family: "돋움"; font-size: 16px; font-weight: 900; margin-bottom: 18px;}
+div .p1{margin-bottom: 5px;}
+div p .pol{color: #ada9aa;}
+div p .span1{font-family: "돋움"; font-size: 14px; font-weight: 900; color: #dd723e;}
+div p .span2{font-family: "돋움"; font-size: 14px; font-weight: 900; color: #75a4d0;}
+div p .span3{font-family: "돋움"; font-size: 14px; font-weight: 900; color: #90a6b1;}
+div p .ten{font-weight: 600;}
+div .p2{margin-bottom: 27px;}
+div .p3{font-family: "돋움"; font-size: 12px; color: #333; line-height: 18px; margin-bottom: 9px;}
+div p .free{background: #8c66e0; border: 1px solid #634c90; font-size: 12px;
+            color: #fff; padding-left: 4px; padding-right: 4px;}
