@@ -1,0 +1,67 @@
+@charset "utf-8";
+body{font-family: "맑은고딕","malgun gothic",sans-serif;}
+*{margin: 0; padding: 0;}
+h1{text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;}
+.warp{width: 228px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #555555;
+    border-radius: 5px;}
+.warp2{width: 228px;}
+.box1{width: 228px;
+    height: 48px;
+    background: #C9EDFF;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 48px;
+    margin-bottom: 10px;
+    border-radius: 5px;}
+.box2{width: 228px;
+    height: 22px;
+    background: #FACFD6;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: 10px;
+    border-radius: 5px;}
+.box3{width: 80px;
+    height: 242px;
+    background: #fff2b5;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 242px;
+    border-radius: 5px;
+    float: right;}
+.box4{width: 138px;
+    height: 122px;
+    background: #edffa8;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 122px;
+    border-radius: 5px;
+    margin-bottom: 10px;}
+.box5{width: 138px;
+    height: 110px;
+    background: #ded1ed;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 110px;
+    border-radius: 5px;}
+.box6{width: 228px;
+    height: 49px;
+    background: #baffd6;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 49px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;}
