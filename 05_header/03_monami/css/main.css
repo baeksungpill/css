@@ -21,7 +21,8 @@ a{text-decoration: none;}
 .header .inner .gnb .li5{margin-right: 85px;}
 .header .inner .gnb .last{margin-right: 0;}
 .header .inner .gnb li a{font-size: 17px;
-                        color: #444;}
+                        color: #444;
+                        font-weight: 400;}
 .header .inner .icon li{float: left;
                         line-height: 89px;
                         margin-left: 28px;}
