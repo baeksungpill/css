@@ -1,0 +1,39 @@
+@charset "utf-8";
+body{height: 3000px;}
+*{margin: 0;padding: 0;}
+div{
+    width: 1000px;
+    height: 600px;
+    background: gold;
+    margin: auto;
+    /* 해당요소에 배경이미지로 반복삽입할때 */
+    /* background-image: url("../images/icon\ \(1\)\ \(1\).png"); */
+    /* 가로로 반복할때 */
+    /* background-repeat: repeat-x;
+    /* 세로로 반복할때 */
+    /* background-repeat: repeat-y; */
+    /* 하나만 삽입할때 */
+    /* background-repeat: no-repeat; */
+    /* 배경이미지삽입할때 short css */
+    /* background: gold url("../images/icon\ \(1\)\ \(1\).png") repeat-x; */
+    /* 배경이미지 위치 */
+    /* background-image: url("../images/icon\ \(1\)\ \(1\).png"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center top;
+    background-position: center center;
+    background-position: center bottom;
+    background-position: right top;
+    background-position: 50% 50%;
+    background-position: 100% top;
+    background-position: center 100%;
+    background-position: 50px 100px;
+    background-position: center 300px; */
+    /* short hand방식 */
+    /* background: gold url("../images/car.png") no-repeat 100% bottom;
+    background: gold url("../images/icon\ \(1\)\ \(1\).png") no-repeat 50% center; */
+    /* 배경이미지를 스크롤바에의해서 스크롤/고정 */
+    /* background-image: url("../images/icon\ \(1\)\ \(1\).png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    /* background: url("../images/icon\ \(1\)\ \(1\).png") no-repeat fixed; */
+}
