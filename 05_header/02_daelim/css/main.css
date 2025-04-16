@@ -23,3 +23,8 @@ li{list-style: none;}
                         line-height: 71px;
                         margin-left: 23px;}
 .header .inner .icon .first{margin-left: 0px;}
+.visual{
+    width: 100%;
+    height: 920px;
+    background: url("../images/main_01_02.jpg") no-repeat center top;
+}
