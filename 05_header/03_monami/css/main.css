@@ -33,3 +33,6 @@ a{text-decoration: none;}
     height: 652px;
     background: url(../images/visual1.jpg) no-repeat center top;
 }
+.header .inner .gnb li:hover a{
+    color: #BA4880;
+}
