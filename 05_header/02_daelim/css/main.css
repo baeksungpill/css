@@ -28,3 +28,6 @@ li{list-style: none;}
     height: 920px;
     background: url("../images/main_01_02.jpg") no-repeat center top;
 }
+.header .inner .gnb li:hover a{
+    color: #062651;
+}
