@@ -1,0 +1,131 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body{font-family: 'Pretendard-Regular',sans-serif;}
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.box{
+    width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.header ul{
+    width: 550px;
+    height: 90px;
+    margin: auto;
+}
+.header{
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 50px;
+}
+.header ul li{
+    float: left;
+    line-height: 90px;
+    margin-right: 80px;
+}
+.header ul .last{
+    margin-right: 0;
+}
+.header ul li a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+.header ul li:hover a{
+    color: #0a57b1;
+}
+.btn1{
+    border: 1px solid #dfdfdf;
+    width: 234px;
+    height: 73px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+.btn1:hover{
+    background: #000;
+    color: #ffff;
+}
+.btn2{
+    width: 112px;
+    height: 40px;
+    border-bottom: 1px solid #222;
+    text-align: left;
+    background: url(../images/ico_plus.png)no-repeat right center;
+}
+.btn3{
+    width: 240px;
+    height: 38px;
+    border: 1px solid #c7c7c7;
+    text-align: left;
+    text-indent: 20px;
+    background: url(../images/ico_sel_arr.gif)no-repeat 217px center;
+}
+.btn3:hover{border: 1px solid #333;}
+.btn4{
+    width: 121px;
+    height: 42px;
+    border-radius: 999px;
+    background-color: #000;
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 42px;
+}
+.btn4:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.btn5{
+    width: 178px;
+    height: 57px;
+    border-radius: 6px;
+    background-color: #235cf3;
+    color: #e2f5ff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 57px;
+}
+.btn5:hover{
+    background-color: #0D42CC;
+    color: #e2f5ff;
+}
+.btn6{
+    width: 180px;
+    height: 46px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 999px;
+    border: 1px solid #5F5F5F;
+    background: #1A1A1A url(../images/icon_arrow_top_16x16_w.svg)no-repeat 150px center;;
+    color: #F6F6F6;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 46px;
+    text-indent: 15px;
+}
+.box6{
+    width: 800px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: #1A1A1A;
+}
+.btn6:hover{
+    background: #303030 url(../images/icon_arrow_top_16x16_w.svg)no-repeat 150px center;
+}
