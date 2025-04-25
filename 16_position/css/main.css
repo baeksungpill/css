@@ -1,0 +1,71 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+}
+div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+}
+.box1{
+    background: red;
+    /* 공중에 띄우겠다는 명령 */
+    /* 브라우저 기준으로 공중에 띄어서 배치하는 명령 */
+    position: absolute;
+    /* 배치위치 좌우중에 하나만, 상하중에 하나만 */
+    left:0;
+    top: 0;
+    /* 공중에 띄운요소 해제 */
+    position: static;
+}
+.box2{
+    background: green;
+    /* 자식박스가 브라우저기준이아닌 부모박스 기준으로 할때
+    부모박스에 주는 명령 이 명령안주면 position absolute
+    준 자식박스는 무조건 브라우저 기준으로 띄어짐*/
+    position: relative;
+}
+.box2 .orange{
+    width: 80px;
+    height: 80px;
+    background: orange;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    z-index: 3;
+}
+.box2 .pink{
+    width: 80px;
+    height: 80px;
+    background: pink;
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    z-index: 4;
+}
+.box2 .pupple{
+    width: 80px;
+    height: 80px;
+    background: purple;
+    position: absolute;
+    left: 90px;
+    top: 90px;
+    z-index: 5;
+}
+.box3{
+    background: blue;
+    position: absolute;
+    /* 가운데 정렬할려면 */
+    left: 50%;
+    /* 단, 상자왼쪽기준 가운데라서 약간 치우치니까 상자 크기 반만큼 왼쪽으로 이동 */
+    margin-left: -100px;
+    top: 50%;
+    /* 세로도 마찬가지 */
+    margin-top: -100px;
+}
+.box4{
+    background: lightblue;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
