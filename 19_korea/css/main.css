@@ -1,0 +1,67 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+}
+*{padding: 0;margin: 0;}
+a{text-decoration: none;}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+hr{
+    border: 1px solid #e0e0e0;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+.header h1{
+    width: 145px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -72.5px;
+    margin-top: -22.5px;
+}
+.header h1 a{
+    text-indent: -99999px;
+    background: url("../images/logo_mo.jpg")no-repeat;
+    width: 145px;
+    height: 45px;
+    background-size: 145px 45px;
+    display: block;
+}
+.header .m_menu{
+    width: 44px;
+    height: 48.5px;
+    text-indent: -99999px;
+    background: url("../images/btn_memu.jpg")no-repeat;
+    background-size: 44px 48.5px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.header .m_search{
+    width: 44px;
+    height: 48.5px;
+    text-indent: -99999px;
+    background: url("../images/icon_search_mo.jpg")no-repeat;
+    background-size: 44px 48.5px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.main{
+    width: 100%;
+}
+.visual{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.main .visual img{
+    width: 100%;
+}
