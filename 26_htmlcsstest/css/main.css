@@ -1,0 +1,248 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+}
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+img{border: none;display: block;}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    box-shadow: 2px 2px 2px #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    box-sizing: border-box;
+}
+.header h1 a{
+    background: url("../images/logo.png")no-repeat;
+    display: block;
+    width: 147px;
+    height: 41.5px;
+    text-indent: -99999px;
+    background-size: 147px 41.5px;
+}
+.header .menu{
+    background: url("../images/btn_allMenu.png")no-repeat;
+    width: 24px;
+    height: 22px;
+    text-indent: -99999px;
+    background-size: 24px 22px;
+}
+.header .search{
+    background: url("../images/btn_search.png")no-repeat;
+    width: 24px;
+    height: 24px;
+    text-indent: -99999px;
+    background-size: 24px 24px;
+}
+/* 메인화면 */
+.main{
+    width: 100%;
+}
+/* visual화면 */
+.main .visual{
+    width: 100%;
+}
+.main .visual img{
+    width: 100%;
+}
+/* section1 */
+.main .section1{
+    padding: 47px 0;
+    background: #ecebe9;
+}
+.main .section1 h2{
+    font-size: 26px;
+    color: #000600;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main .section1 h2 span{
+    color: #eb691b;
+}
+.main .section1 ul{
+    width: 380px;
+    margin: auto;
+    display: flex;
+}
+.main .section1 ul li{
+    width: 50%;
+    height: 135px;
+    text-align: center;
+    position: relative;
+}
+/* 구분선 */
+.main .section1 ul li::after{
+    content: "";
+    width: 1px;
+    height: 73px;
+    background: #e0dfdd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -36.5px;
+}
+.main .section1 ul li:last-child::after{
+    display: none;
+}
+.main .section1 ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+.main .section1 ul li a h4{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+.main .section1 ul li a p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #50555b;
+}
+.main .section1 ul li a h4 em{
+    color: #5d5360;
+}
+.main .section1 ul li:first-child a{
+    background: url("../images/btn_free01.png")no-repeat center 0;
+    background-size: 77px 77px;
+}
+.main .section1 ul li:last-child a{
+    background: url("../images/btn_free02.png")no-repeat center 0;
+    background-size: 77px 77px;
+}
+/* section2 */
+.main .section2{
+    padding: 52px 0;
+    background: #fff;
+}
+.main .section2 ul.tit{
+    width: 379px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.main .section2 ul.tit li{
+    width: 109px;
+    height: 37px;
+}
+.main .section2 ul.tit li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #e0e0e0;
+    text-align: center;
+    line-height: 37px;
+    font-size: 14px;
+    color: #755941;
+    font-weight: 700;
+    border-radius: 12px;
+}
+.main .section2 ul.grade{
+    width: 379px;
+    margin: 35px auto 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main .section2 ul li{
+    width: 99px;
+    height: 48px;
+}
+.main .section2 ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    color: #5e5751;
+    font-weight: 600;
+    text-align: center;
+    line-height: 48px;
+}
+/* footer */
+.footer{
+    width: 100%;
+}
+.footer .family{
+    width: 100%;
+    height: 48px;
+    background: #999999;
+    display: flex;
+    justify-content: center;
+}
+.footer .family button{
+    width: 120px;
+    line-height: 48px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    background: url("../images/btn_plus_white.png")no-repeat 100% center;
+    background-size: 10px 10px;
+}
+.footer ul{
+    width: 100%;
+    height: 50px;
+    background: #aaaaaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.footer ul li{
+    position: relative;
+}
+.footer ul li:last-child::after{
+    display: none;
+}
+.footer ul li::after{
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    right: -9px;
+    top: 50%;
+    margin-top: -3px;
+}
+.footer ul li a{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+}
+.footer .copy{
+    padding: 30px 0;
+    background: #cccccc;
+    text-align: center;
+}
+.footer .copy h3{
+    font-size: 14px;
+    color: #747474;
+    margin-bottom: 10px;
+}
+.footer .copy address{
+    font-size: 12px;
+    color: #848484;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.footer .copy p{
+    font-size: 12px;
+    color: #848484;
+    letter-spacing: -1px;
+}
