@@ -370,6 +370,7 @@ input::placeholder{
     padding: 20px 95px;
     box-sizing: border-box;
     background: #fff;
+    /* 공중에 띄워서 아래 고정 */
     position: fixed;
     left: 0;
     bottom: 0;
