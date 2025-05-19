@@ -38,7 +38,6 @@ li{list-style: none;}
 }
 .header .inner .gnb>li>.depth2>li{
     line-height: 38px;
-    text-align: center;
 }
 .header .inner .gnb>li>.depth2>li>a{
     font-size: 14px;
@@ -78,7 +77,8 @@ li{list-style: none;}
     width: 169px;
 }
 .header .inner .gnb>.last>.depth2{
-    width: 90px;
+    width: 85px;
+    text-align: center;
 }
 .header .inner .gnb>li:hover>.depth2{
     display: block;
