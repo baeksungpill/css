@@ -12,14 +12,18 @@ li{list-style: none;}
                 margin: 27px 97px 0 0;}
 .header .inner .gnb{float: left;}
 .header .inner .login{float: right;}
-.header .inner .gnb li{float: left;
+.header .inner .gnb>li{float: left;
                         margin-right: 32px;
-                        line-height: 100px;}
-.header .inner .gnb .last{margin-right: 0;}
-.header .inner .gnb li a{color: #fff;
+                        line-height: 100px;
+                    position: relative;}
+.header .inner .gnb>.last{margin-right: 0;}
+.header .inner .gnb>li>a{color: #fff;
                         font-weight: 700;
                         font-size: 19px;
-                        letter-spacing: 2px;}
+                        letter-spacing: 2px;
+                    display: block;
+                    height: 100px;
+                position: relative;}
 .header .inner .login li{float: left; margin-left: 20px;
                         line-height: 100px;}
 .header .inner .login .first{margin-left: 0px;}
@@ -31,4 +35,51 @@ li{list-style: none;}
     width: 100%;
     height: 900px;
     background: url("../images/20250314110005847042.png") no-repeat center top;
+}
+.header .inner .gnb>li>.depth2>li{
+    line-height: 38px;
+    text-align: center;
+}
+.header .inner .gnb>li>.depth2>li>a{
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: -1px;
+}
+.header .inner .gnb>li>.depth2{
+    width: 171px;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    display: none;
+}
+.header .inner .gnb>li>a::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #bf131f;
+    position: absolute;
+    left: 0;
+    top: 67px;
+    display: none;
+}
+.header .inner .gnb>li:hover>a::after{
+    display: block;
+}
+.header .inner .gnb>.menu>.depth2{
+    width: 258px;
+}
+.header .inner .gnb>.mem>.depth2{
+    width: 240px;
+}
+.header .inner .gnb>.ben>.depth2{
+    width: 169px;
+}
+.header .inner .gnb>.last>.depth2{
+    width: 90px;
+}
+.header .inner .gnb>li:hover>.depth2{
+    display: block;
 }
