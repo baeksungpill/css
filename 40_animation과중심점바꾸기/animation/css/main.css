@@ -1,0 +1,115 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+}
+*{padding: 0;margin: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+
+.box{
+    width: 1400px;
+    height: 740px;
+    border: 11px solid #000000;
+    margin: auto;
+    position: relative;
+}
+/* 박스안에 마우스를 올리면 일시정지/ 마우스빼면 재생 */
+.box:hover .clock{
+    animation-play-state: paused;
+}
+.box .clock{
+    position: absolute;
+    left: 50%;
+    margin-left: -82.5px;
+    top: 0;
+    transform: rotate(45deg);
+    /* 중심축 변경하는 명령어 */
+    transform-origin: center top;
+    animation: clock_ani 1s ease-in-out forwards infinite;
+}
+@keyframes clock_ani {
+    0%{transform: rotate(45deg);}
+    50%{transform: rotate(-45deg);}
+    100%{transform: rotate(45deg);}
+}
+
+
+
+.box .clock2{
+    position: absolute;
+    right: 0;
+    margin-right: -85.5px;
+    top: 50%;
+    transform: rotate(135deg);
+    transform-origin: center top;
+    animation: clock2_ani 1s ease-in-out forwards infinite;
+}
+@keyframes clock2_ani {
+    0%{transform: rotate(135deg);}
+    50%{transform: rotate(45deg);}
+    100%{transform: rotate(135deg);}
+}
+.box:hover .clock2{
+    animation-play-state: paused;
+}
+
+
+
+.box .clock3{
+    position: absolute;
+    bottom: -340px;
+    left: 50%;
+    margin-left: -82.5px;
+    transform: rotate(-225deg);
+    transform-origin: center top;
+    animation: clock3_ani 1s ease-in-out forwards infinite;
+}
+@keyframes clock3_ani {
+    0%{ transform: rotate(-225deg);}
+    50%{ transform: rotate(-135deg);}
+    100%{ transform: rotate(-225deg);}
+}
+.box:hover .clock3{
+    animation-play-state: paused;
+}
+
+
+.box .clock4{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: -85.5px;
+    transform: rotate(-135deg);
+    transform-origin: center top;
+    animation: clock4_ani 1s ease-in-out forwards infinite;
+}
+@keyframes clock4_ani {
+    0%{transform: rotate(-135deg);}
+    50%{transform: rotate(-45deg);}
+    100%{transform: rotate(-135deg);}
+}
+.box:hover .clock4{
+    animation-play-state: paused;
+}
+
+.box .line{
+    width: 8px;
+    height: 166px;
+    background: #000;
+    margin: auto;
+}
+.box .circle{
+    width: 165px;
+    height: 165px;
+    background: red url("../images/1.jpg")no-repeat 80%;
+    background-size: cover;
+    border-radius: 999px;
+    margin: auto;
+    border: 5px solid #000;
+}
+.box h3{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 48px;
+}
