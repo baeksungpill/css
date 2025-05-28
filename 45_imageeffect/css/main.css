@@ -1,0 +1,57 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+}
+
+.test1{
+    /* 블러처리효과 */
+    filter: blur(10px);
+}
+.test2{
+    /* 밝기 효과 100%가 기본기준*/
+    /* 어둡게 */
+    filter: brightness(80%);
+    /* 밝게 */
+    filter: brightness(200%);
+}
+.test3{
+    /* 명도대비 */
+    filter: contrast(100%);
+    filter: contrast(200%);
+    filter: contrast(150%);
+}
+.test4{
+    /* 이미지에 그림자효과 */
+    /* drop-shadow(x축 y축 퍼짐정도 색깔) */
+    filter: drop-shadow(20px 10px 10px gray);
+    filter: drop-shadow(0px 0px 10px gray);
+}
+.test5{
+    /* 이미지 흑백효과 */
+    filter: grayscale(100%);
+}
+.test6{
+    /* 이미지 색조 효과 */
+    filter: sepia(100%);
+}
+.test7{
+    /* 이미지 채도 효과 (선명도)*/
+    filter: saturate(0%);
+    filter: saturate(50%);
+    filter: saturate(100%);
+    filter: saturate(150%);
+    filter: saturate(200%);
+}
+.test8{
+    /* 이미지 투명도 */
+    filter: opacity(30%);
+    filter: opacity(50%) blur(10px);
+}
+.test9{
+    /* 색상반전 */
+    filter: invert(100%);
+}
+.test10{
+    /* 색상회전 */
+    filter: hue-rotate(90deg);
+}
