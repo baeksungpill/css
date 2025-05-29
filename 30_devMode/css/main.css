@@ -63,9 +63,9 @@ button{background: none;border: none;cursor: pointer;}
 .keyword ul.btnwrap{
     display: flex;
     flex-wrap: wrap;
-}
-.keyword ul.btnwrap li{
-    margin-right: 40px;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
 }
 
 .keyword ul.btnwrap li a{
@@ -104,4 +104,38 @@ ul.tabbar a{
 }
 ul.tabbar li:first-child a{
     color: #235BF5;
+}
+
+
+/* 상품목록 */
+.new h2{
+    margin: 16px 0;
+}
+.new .list{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+.new ul.list li{
+    width: 50%;
+}
+.new ul.list li a{
+    display: block;
+    width: 100%;
+}
+.new ul.list li a .imgbox{
+    width: 100%;
+}
+.new ul.list li a .imgbox img{
+    width: 100%;
+}
+.new ul.list li a .info{
+    margin-top: 16px 0px;
+}
+.new ul.list li a .info h3{
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
 }
