@@ -77,10 +77,10 @@ button{background: none;border: none;cursor: pointer;}
     padding: 8px 12px;
 }
 
-.keyword ul.btnwrap li:nth-child(5) a,
-.keyword ul.btnwrap li:nth-child(6) a{
-    margin-top: 16px;
-}
+/* .keyword ul.btnwrap li:nth-child(5) a,
+.keyword ul.btnwrap li:nth-child(6) a{ */
+    /* margin-top: 16px; */
+/* } */
 
 
 /* 탭바 */
