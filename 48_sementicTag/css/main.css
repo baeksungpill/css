@@ -1,0 +1,85 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+    background: #7f7f7f;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.wrap{
+    margin: auto;
+    width: 915px;
+}
+
+/* 헤더 */
+.wrap header{
+    width: 100%;
+    height: 80px;
+    background: #D9D9D9;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* navi */
+.wrap nav{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #000;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* main */
+.wrap main{
+    width: 100%;
+    padding: 45px 12px;
+    background: #D9D9D9;
+    border: 1px solid #000;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap main .sectionwrap{
+    width: 570px;
+}
+.wrap main section{
+    width: 100%;
+    border: 1px solid #000;
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+.wrap main section article{
+    width: 100%;
+    height: 85px;
+    border: 1px solid #000;
+    /* background: #FFD966; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap main aside{
+    width: 240px;
+    height: 350px;
+    border: 1px solid #000;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+.wrap footer{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #000;
+    background: #D9D9D9;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
