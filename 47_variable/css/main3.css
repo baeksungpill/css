@@ -1,0 +1,70 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic",sans-serif;
+    background: var(--body_bg);
+}
+*{padding: 0;margin: 0;box-sizing: border-box;}
+a{text-decoration: none;}
+li{list-style: none;}
+:root{
+    --body_bg:#d3edfa;
+    --div_bg:#fff;
+    --h2_font_size: 24px;
+    --p_font_size: 14px;
+    --h3_font_size: 16px;
+    --main_color: #e31f1f;
+    --sub_color: #0f47ea;
+    --p_color: #505e61;
+    --left_padd: 21px;
+    --top_padd: 30px;
+    --font_weight: 500;
+    --border_color: #ccc;
+}
+ul{
+    width: 661px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    width: 321px;
+    border-radius: 12px;
+    border: 1px solid var(--border_color);
+    overflow: hidden;
+}
+ul li a{
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+}
+/* ul li a .imgbox{
+    width: 100%;
+    overflow: hidden;
+} */
+ul li a img{
+    width: 100%;
+    height: 242px;
+}
+ul li a div{
+    width: 100%;
+    background: var(--div_bg);
+    padding: var(--top_padd) var(--left_padd);
+    margin-top: -3px;
+}
+ul li a div h2{
+    font-size: var(--h2_font_size);
+    color: var(--main_color);
+    margin-bottom: 12px;
+}
+ul li a div p{
+    font-size: var(--p_font_size);
+    color: var(--p_color);
+    font-weight: var(--font_weight);
+}
+ul li a div h3{
+    font-size: var(--h3_font_size);
+    margin: 16px 0;
+}
