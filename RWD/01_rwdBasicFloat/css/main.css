@@ -1,0 +1,70 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+/* float명령 반응형 */
+/* pc기기 일때 1200px(해상도)이상*/
+.wrap{
+    width: 1000px;
+    margin: auto;
+}
+.wrap .red{
+    width: 100%;
+    height: 150px;
+    background: red;
+}
+.wrap .bg_wrap .blue{
+    width: 50%;
+    height: 120px;
+    background: blue;
+    float: left;
+}
+.wrap .bg_wrap .green{
+    width: 50%;
+    height: 120px;
+    background: green;
+    float: left;
+}
+
+/* 노트북 일때 991px ~ 1199px(해상도)*/
+@media ( min-width:991px ) and ( max-width:1199px ){
+    /* pc 기준으로 노트북시안에 변경된 부분만 코딩한다 */
+    .wrap{
+        width: 100%;
+    }
+    body{
+        padding: 0 20px;
+    }
+}
+
+/* 테블릿 일때 768px ~ 990px(해상도)*/
+@media ( min-width:768px ) and ( max-width:990px ){
+    /* pc 기준으로 테블릿시안에 변경된 부분만 코딩 */
+    .wrap{
+        width: 100%;
+    }
+    .wrap .bg_wrap .blue{
+        height: 240px;
+    }
+    .wrap .bg_wrap .green{
+        height: 240px;
+    }
+}
+
+/* 모바일 일때 320px ~ 767px*/
+/* pc 기준으로 모바일시안에 변경된 부분만 코딩 */
+@media ( min-width:320px ) and ( max-width:767px ){
+    .wrap{
+        width: 100%;
+    }
+    .wrap .red{
+        height: 300px;
+    }
+    .wrap .bg_wrap .blue{
+        float: none;
+        width: 100%;
+    }
+    .wrap .bg_wrap .green{
+        float: none;
+        width: 100%;
+    }
+}
