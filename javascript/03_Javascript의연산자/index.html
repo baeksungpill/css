@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 연산자(산술연산자)</title>
+</head>
+<body>
+    <!-- 
+        1.산술 연산자 +  -  *  /  %(나눈후 나머지값, ex) 13 % 3 = 1) **(제곱승)
+        2.출력할때 서로 다른 TYPE(성격)이 다를때에는 연결연산자 (+) 사용 
+        ex) "문자" , 변수 면 중간에 "문자" + 변수 이렇게 사용, 숫자 + 변수, 문자 + 변수 + 문자
+    -->
+
+    <script>
+        // 숫자 변수
+        let num1 = 10;
+        let num2 = 20;
+        let num3 = 30;
+
+        let num4 = num1 + num2;
+        let num5 = num1 - num2;
+        let num6 = num2 * num3;
+        let num7 = num3 / num1;
+        let num8 = num3 % num1;
+        let num9 = num1 ** 2
+        document.write("num4의변수값=" + num4 + "<br>");
+         // = 30으로 출력
+        document.write("num5의변수값=" + num5 + "<br>");
+        document.write("num6의변수값=" + num6 + "<br>");
+        document.write("num7의변수값=" + num7 + "<br>");
+        document.write("num8의변수값=" + num8 + "<br>");
+        document.write("num9의변수값=" + num9 + "<br>");
+
+        // 문자 변수
+        let cha1 = "hi";
+        let cha2 = "hellow";
+        let cha3 = "welcome";
+
+        let cha4 = cha1 + cha2 + cha3;
+        document.write("cha4변수값=" + cha4 + "<br>")
+
+        // 문자 변수 선언후 문자 data를 기억 (위에 숫자변수 10,20,30 이랑은 다른거임 문자로 기억하는거)
+        let cm1 = "10";
+        let cm2 = "20";
+        let cm3 = "30";
+
+        let cm4 = cm1 + cm2;
+        document.write("cm4의 변수값은 =" + cm4 + "<br>");
+        //  = 1020 으로 출력
+    </script>
+</body>
+</html>
