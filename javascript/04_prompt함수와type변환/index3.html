@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt함수 응용</title>
+</head>
+<body>
+    <script>
+        let tel = prompt("번호를 입력해주세요?");
+        let name = prompt("이름을 입력해주세요?");
+        let write = prompt("국어점수를 입력해주세요?");
+        let english = prompt("영어점수를 입력해주세요?");
+        let math = prompt("수학점수를 입력해주세요?");
+        
+        let add = Number(write) + Number(english) + Number(math);
+        let mok = Number(add) / 3;
+
+        document.write("번호" + ":" + tel + "번" + "<br>");
+        document.write("이름" + ":" + name + "님" + "<br>");
+        document.write("국어점수" + ":" + write + "점" + "<br>");
+        document.write("영어점수" + ":" + english + "점" + "<br>");
+        document.write("수학점수" + ":" + math + "점" + "<br>");
+
+        document.write("총점" + ":" + add + "점" + "<br>");
+        document.write("평균" + ":" + mok + "점" + "<br>");
+    </script>
+</body>
+</html>
