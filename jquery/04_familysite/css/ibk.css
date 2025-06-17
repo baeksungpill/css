@@ -130,9 +130,9 @@ button{
     color: #333;
     font-weight: 700;
 }
-.footer .inner .group .family2:hover ul{
+/* .footer .inner .group .family2:hover ul{
     display: block;
-}
+} */
 .footer .inner .group .family1 ul{
     width: 140px;
     border: 1px solid #c6c7c9;
@@ -157,6 +157,6 @@ button{
     color: #333;
     font-weight: 700;
 }
-.footer .inner .group .family1:hover ul{
+/* .footer .inner .group .family1:hover ul{
     display: block;
-}
+} */
