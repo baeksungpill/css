@@ -1,10 +1,18 @@
 $(function(){
-$(".group .family1>button").click(function(){
-    $(".group .family1>ul").toggle();
+
+$(".family1>button").click(function(){
+    $(".family1>ul").toggle();
+     $(".family2>ul").hide();
 })
-$(".group .family2>button").click(function(){
-    $(".group .family2>ul").toggle();
+
+$(".family2>button").click(function(){
+    $(".family2>ul").toggle();
+    $(".family1>ul").hide();
 })
+
+
+
+
 
 
 
