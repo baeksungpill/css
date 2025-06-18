@@ -133,3 +133,24 @@ main .slider .slick-next{
     text-indent: -99999px;
 }
 
+/* 페이지 버튼 변경 */
+main .slider .slick-dots{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    gap: 8px;
+}
+/* 123456 대신에 원으로 변경 검사에서 보면 숫자는 버튼이 가지고 있음*/
+main .slider .slick-dots li button{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 100%;
+    text-indent: -99999px;
+}
+/* 활성화된 클래스의 버튼을 변경 */
+main .slider .slick-dots li.slick-active button{
+    background: #f9b233;
+}
