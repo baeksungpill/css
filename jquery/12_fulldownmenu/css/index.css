@@ -15,7 +15,11 @@ button{border: none;background: none;cursor: pointer;}
     /* height: 380px; */
     height: 110px;
     background: #fff;
-    border-bottom: 1px solid #c3c3c3;
+    /* border-bottom: 1px solid #c3c3c3; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
 }
 
 
@@ -99,3 +103,4 @@ header .inner ul.gnb>li>.depth2 li a{
 header .inner ul.gnb>li>.depth2 li:hover a{
     color: #000;
 }
+
