@@ -7,7 +7,6 @@
 </head>
 <body>
     <script>
-        let day = ["월요일","화요일","수요일"]
         let schdule = {
             mon:{
                 first:"1교시:html",
@@ -22,9 +21,9 @@
                 second:"2교시:포트폴리오"
             }
         }
-        document.write(day[0] + "<br>" + schdule.mon.first + "<br>" + schdule.mon.second + "<br>");
-        document.write(day[1] + "<br>" + schdule.tue.first + "<br>" + schdule.tue.second + "<br>");
-        document.write(day[2] + "<br>" + schdule.wen.first + "<br>" + schdule.wen.second + "<br>");
+        document.write("<h3>월요일</h3>" + schdule.mon.first + "<br>" + schdule.mon.second + "<br>");
+        document.write("<h3>화요일</h3>" + schdule.tue.first + "<br>" + schdule.tue.second + "<br>");
+        document.write("<h3>수요일</h3>" + schdule.wen.first + "<br>" + schdule.wen.second + "<br>");
 
     </script>
 </body>
