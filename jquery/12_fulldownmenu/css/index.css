@@ -85,7 +85,7 @@ header .inner ul.gnb>li{
 header .inner ul.gnb>li>.depth2{
     position: absolute;
     left: 50%;
-    top: 88px;
+    top: 110px;
     transform: translateX(-50%);
     display: none;
 }
