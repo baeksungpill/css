@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 응용2</title>
+</head>
+<body>
+    <script>
+        let amount = 3650000;
+        let term = 1;
+        let rate = 4;
+        function imterestcalculator(amount,term,rate){
+            let total = amount * term * rate / 100
+            return total;
+        }
+        document.write(`맡긴 금액은 ${amount}원 입니다.<br>`);
+        document.write(`이자는 ${imterestcalculator(3650000,1,4)}원 입니다.<br>`);
+        document.write(`최종받을 금액은 ${amount + imterestcalculator(3650000,1,4)}원 입니다.<br>`);
+
+    </script>
+</body>
+</html>
