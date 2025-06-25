@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return문 응용</title>
+</head>
+<body>
+          <!-- // 제곱근을 구하는 계산기 프로그램
+        // 데이타는 외부에서 받아서 출력하는 프로그램
+
+        let num = prompt("제곱승을 구할 숫자를 입력하세요");
+        // 제곱근을 구하는 프로그램
+        function squre(no){
+            return no * no;
+        }
+        document.write(squre(num) + "<br>"); -->
+        <script>
+            let num1 = prompt("더할 숫자를 입력하세요");
+            let num2 = prompt("더할 숫자를 입력하세요");
+            function plus(no){
+                return Number(num1) + Number(num2);
+            }
+            document.write(`${num1} + ${num2} = ${plus()}`);
+        </script>
+</body>
+</html>
