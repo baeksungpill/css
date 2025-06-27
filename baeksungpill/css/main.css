@@ -1,0 +1,337 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun-gothic",sans-serif;
+    background: #fff;
+    color: #333;
+    font-size: 15px;
+}
+/* 초기화 */
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{background: none;border: none;cursor: pointer;}
+img{display: block;border: none;}
+
+/* 전체배경 */
+.wrap_bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;top: 0;
+    z-index: 89;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+/* 팝업 */
+.wrap{
+    position: relative;
+}
+.popup{
+    width: 500px;
+    height: 300px;
+    background: #2E7D32;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 90;
+    color: #fff;
+    display: none;
+}
+.popup .pop_btn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 5px;
+    border: 1px solid #A5D6A7;
+    background: #fff;
+}
+.popup h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.popup p{
+    font-size: 14px;
+    line-height: 40px;
+}
+
+/* 2단메뉴 */
+header nav .gnb>li{
+    position: relative;
+}
+header nav .gnb>li>.depth2{
+    z-index: 50;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 150px;
+    display: none;
+}
+header nav .gnb>li>.depth2 li{
+    width: 100%;
+}
+header nav .gnb>li>.depth2 li a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+header nav .gnb>li>.depth2 li:hover a{
+    background: #A5D6A7;
+    color: #fff;
+}
+header .gnb_bg{
+    background: rgba(255,255,255,0.5);
+    width: 1200px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 48;
+    display: none;
+}
+
+
+/* 헤더 */
+header{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+header h1{
+    display: flex;
+    align-items: center;
+}
+header nav ul.gnb{
+    width: 600px;
+    height: 40px;
+    display: flex;
+}
+header nav ul.gnb>li{
+    width: 150px;
+    height: 40px;
+}
+header nav ul.gnb>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
+}
+header nav ul.gnb>li:hover>a{
+    background: #2E7D32;
+    color: #fff;
+}
+
+/* 메인 */
+main{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+/* 컨텐츠 */
+.contents{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+}
+/* notice */
+.contents .notice{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+.contents .notice h2{
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    background: #2E7D32;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+.contents .notice ul{
+    width: 100%;
+    height: 140px;
+    border: 1px solid #A5D6A7;
+    padding: 10px;
+}
+.contents .notice ul li{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contents .notice ul li a{
+    color: #333;
+    font-weight: 500;
+}
+.contents .notice ul li span{
+    font-size: 14px;
+}
+
+/* gallery */
+.contents .gallery h2{
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+.contents .gallery{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+.contents .gallery ul{
+    border: 1px solid #A5D6A7;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* banner */
+.contents .banner_wrap{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+.contents .banner_wrap .banner{
+    width: 400px;
+    height: 200px;
+}
+.contents .banner_wrap .banner_btn{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    background: #2E7D32;
+    box-shadow: 2px 2px 2px #333;
+    font-size: 20px;
+}
+
+/* footer */
+footer{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #2E7D32;
+}
+footer .f_wrap{
+    width: 800px;
+    height: 100px;
+    padding-left: 30px;
+}
+footer .f_wrap .f_txt1,
+footer .f_wrap .f_txt2,
+footer .f_wrap p{
+    width: 100%;
+    height: 33.3px;
+    line-height: 33.3px;
+}
+footer .f_wrap .f_txt1 ul,
+footer .f_wrap .f_txt2 ul{
+    display: flex;
+    gap: 10px;
+}
+footer .f_wrap .f_txt1 ul li a,
+footer .f_wrap .f_txt2 ul li a,
+footer .f_wrap p{
+    font-size: 12px;
+    color: #333;
+    padding-left: 10px;
+}
+footer .f_wrap .f_txt1 ul li,
+footer .f_wrap .f_txt2 ul li{
+    position: relative;
+}
+footer .f_wrap .f_txt1 ul li:first-child::after,
+footer .f_wrap .f_txt2 ul li:first-child::after{
+    display: none;
+}
+footer .f_wrap .f_txt1 ul li::after,
+footer .f_wrap .f_txt2 ul li::after{
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #333;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* 패밀리사이트 */
+footer .family{
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+    position: relative;
+}
+footer .family .fm_btn{
+    width: 200px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #333;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+footer .family ul{
+    width: 100%;
+    border: 1px solid #333;
+    border-bottom: none;
+    position: absolute;
+    left: 0;
+    top: -91px;
+    display: none;
+}
+footer .family ul li{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+footer .family ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+footer .family ul li:hover a{
+    background: #2E7D32;
+    color: #fff;
+}
