@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM객체선택</title>
+    <style>
+        /* 이름을 작명할때 보통 _(*언더바,sneak 표기법) 를 씀 css에서 */
+    </style>
+</head>
+<body>
+    <!-- 
+        DOM객체 -> 웹페이지에 있는 모든 요소(html태그,텍스트,속성)
+        자바스크립트로 다루기 쉽게 접근하려고 함
+    -->
+        <h1 id="tit1">큰제목1</h1>
+        <h1 id="tit2">큰제목2</h1>
+        <h1 id="tit3">큰제목3</h1>
+        <h1 id="tit4">큰제목4</h1>
+        <p>여기는 문단입니다</p>
+
+        <script>
+            // DOM객체선택
+            // 제이쿼리에서 css문법 -> $("선택자").css({""});
+            // 자바스크립트에서 css문법 -> 선택자.style.css명령="css값";
+            let tit1 = document.getElementById("tit1");
+            console.log(tit1);
+            tit1.style.color="red";
+
+            let tit2 = document.getElementById("tit2");
+            console.log(tit2);
+            tit2.style.border="10px solid red";
+
+            let tit3 = document.getElementById("tit3");
+            console.log(tit3);
+            // 여러개줄때는 밑에 써야함
+            tit3.style.color="green";
+            tit3.style.background="yellow";
+            // 자바스크립에서는 -를 못써서, font-size가 아니라 fontSize 인대, -를 구별하기 위해 단어 첫글자를 대문자로 해줘야함 s -> S (카멜기법이라고함)
+            tit3.style.fontSize="100px";
+
+            // di=4 글자크기 64, 글자색 파랑색, 배경색 흰색
+            let tit4 = document.getElementById("tit4");
+            tit4.style.fontSize="64px"
+            tit4.style.color="blue";
+            tit4.style.background="white";
+
+            // p태그를 선택, 태그선택자는 배열로 들어가기때문에 [순서] 써주고 해줘야함 
+            let ppp = document.getElementsByTagName("p");
+            console.log(ppp);
+
+            ppp[0].style.color="purple";
+            ppp[0].style.fontSize="36px";
+
+            // h1태그 선택자로 dom객체 선택
+            let hhh = document.getElementsByTagName("h1");
+            console.log(hhh);
+            hhh[0].style.background="black";
+            hhh[0].style.color="#fff";
+        </script>
+</body>
+</html>
