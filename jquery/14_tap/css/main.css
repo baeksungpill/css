@@ -83,9 +83,13 @@ button{border: none;background: none;cursor: pointer;}
     color: #888;
     font-weight: 700;
 }
-.section .inner .right .wrap .menu li:first-child a{
+.section .inner .right .wrap .menu li.on a,
+.section .inner .right .wrap .menu li:hover a{
     color: #333;
 }
+/* .section .inner .right .wrap .menu li:first-child a{
+    color: #333;
+} */
 .section .inner .right .wrap .menu li{
     position: relative;
 }
