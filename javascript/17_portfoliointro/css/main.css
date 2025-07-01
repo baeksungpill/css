@@ -46,3 +46,7 @@ a{text-decoration: none;}
 .intro .inner .info a{
     color: #fff;
 }
+.intro .inner .info .year .d_day{
+    font-size: 32px;
+    font-weight: 600;
+}
