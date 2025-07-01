@@ -6,8 +6,20 @@ function time(){
     let webMsec = document.querySelector(".web_msec");
     console.log(webHour, webMin, webSec, webMsec);
 
+    let webYear = document.querySelector(".web_year");
+    let webMon = document.querySelector(".web_mon");
+    let webDay = document.querySelector(".web_day");
+
     let date = new Date();
     console.log(date);
+
+    let year = date.getFullYear();
+    console.log(year);
+    webYear.innerHTML = year;
+    let mon = date.getMonth() + 1;
+    webMon.innerHTML = mon;
+    let day = date.getDate();
+    webDay.innerHTML = day;
 
     // 시간
     let hour = date.getHours();
@@ -41,7 +53,6 @@ function time(){
             return x;
         }
     }
-
 }
 // 매 1초마다 time함수를 반복실행
 setInterval(function(){
