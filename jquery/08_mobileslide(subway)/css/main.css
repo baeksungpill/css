@@ -459,6 +459,12 @@ button{
 }   
 
 /* subcard */
+.subcard>ul>li>a>.sub_h3{
+    font-size: 14px;
+    color: #434544;
+    margin-top: 8px;
+    font-weight: 600;
+}
 .subcard h2{
     font-size: 18px;
     color: #292929;
