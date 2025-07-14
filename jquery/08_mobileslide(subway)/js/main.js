@@ -41,7 +41,9 @@ $('.banner_slide').slick({
 
 // 아코디언 (2단메뉴) 메뉴
 $(".m_gnb>ul>li>a").click(function(){
-    $(this).next().slideToggle().parent().siblings().find(".depth2").slideUp();
+  $(".m_gnb>ul>li>a").removeClass("on");
+  $(this).toggleClass("on");
+  $(this).next().slideToggle().parent().siblings().find(".depth2").slideUp();
   })
 
 // 햄버거 버튼을 클릭하면 모바일 m_side_wrap 이 
@@ -55,4 +57,17 @@ $(".m_close").click(function(){
     $(".cover").fadeOut();
     $(".m_side_wrap").animate({"left":"-100%"},300);
   })
+
+// 왼쪽아이콘 중에 li를 클릭하면 on클래스 추가
+$("ul.left_icon li").click(function(){
+  $("ul.left_icon li").removeClass('on')
+  $("ul.right_icon li").removeClass('on')
+  $(this).addClass("on")
+})
+// 오른쪽아이콘 li를 클릭하면 on클래스 추가
+$("ul.right_icon li").click(function(){
+  $("ul.right_icon li").removeClass('on')
+  $("ul.left_icon li").removeClass('on')
+  $(this).addClass("on")
+})
 })
