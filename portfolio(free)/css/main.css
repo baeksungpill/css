@@ -1,0 +1,157 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{border: none;background: none;cursor: pointer;}
+
+.en{font-family: "cormorant",serif;}
+
+#section0{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+#section1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+#section2{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+#section3{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+#section4{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+#section5{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+#section6{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+}
+.inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.inner .title{
+    color: #fff;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#section6 .title{
+    color: #fff;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* header 영역 */
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 30px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 a{
+    color: #fff;
+}
+
+/* 주메뉴 */
+header .navi_wrap .gnb{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(200px);
+    transition: all 0.5s ease-in-out;
+}
+header.on .navi_wrap .gnb{
+    transform: translateX(0);
+    opacity: 1;
+}
+header .navi_wrap .gnb ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+}
+header .navi_wrap .gnb ul li a{
+    color: rgba(255,255,255,0.6);
+}
+header .navi_wrap .gnb ul li:hover a{
+    color: #fff;
+}
+
+/* 햄버거버튼 */
+header .navi_wrap{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.m_btn{
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.m_btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    left: 0;
+}
+.m_btn span:nth-child(1){
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
+.m_btn span:nth-child(2){
+    top: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.m_btn span:nth-child(3){
+    top: 20px;
+    transition: all 0.5s ease-in-out;
+}
+header.on .m_btn span:nth-child(1){
+    transform: rotate(45deg);
+    top: 10px;
+}
+header.on .m_btn span:nth-child(2){
+    transform: translateX(100%);
+    opacity: 0;
+}
+header.on .m_btn span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 10px;
+}
