@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dataset 응용</title>
+</head>
+<body>
+    <!-- 
+    자바스크립에서는 dataset속성을 통해서 사용자가만든속성값에 쉽게 접근가능 
+    문법 :  문서객체명.dataset.속성명
+            문서객체명.dataset[속성명]
+            ex) 커피점에서 커피명과, 금액을 처리해서 클릭시 주문하는 키오스크
+    -->
+
+    <h1>커피를 주문하세요</h1>
+    <button data-coffee-name="아메리카노" data-price="4000">아메리카노</button>
+    <button data-coffee-name="카페라떼" data-price="4500">카페라떼</button>
+    <button data-coffee-name="바닐라라떼" data-price="5000">바닐라라떼</button>
+    <button data-coffee-name="카라멜마끼아또" data-price="5500">카라멜마끼아또</button>
+    <button data-coffee-name="자몽에이드" data-price="6000">자몽에이드</button>
+    <button data-coffee-name="청포도에이드" data-price="6000">청포도에이드</button>
+
+    <hr>
+    <h2>주문내역</h2>
+    <p>
+        명 : <span id="coffee"></span><br>
+        가격 : <span id="price"></span><br>
+        <span>제품을 주문하셨습니다.</span>
+    </p>
+
+    <script>
+        // 문서객체 선택해서 변수에 저장
+        let btn = document.getElementsByTagName("button");
+        console.log(btn);
+        let coffee = document.getElementById("coffee");
+        console.log(coffee);
+        let price = document.getElementById("price");
+        console.log(price);
+
+        for(let i=0;i<btn.length;i++){
+            btn[i].addEventListener("click",function(){
+                let cofname = this.dataset.coffeeName;
+                let cofprice = this.dataset.price;
+
+                coffee.innerHTML = cofname;
+                price.innerHTML = cofprice;
+            })
+        }
+    </script>
+</body>
+</html>
