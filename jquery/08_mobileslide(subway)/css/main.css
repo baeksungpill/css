@@ -21,6 +21,44 @@ button{
     display: none;
     z-index: 99;
 }
+
+/* 팝업창 */
+.popup{
+    background: #ffc20c;
+    padding: 10px 10px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 900;
+}
+.popup a img{
+    width: 100%;
+    min-width: 320px;
+}
+.popup .close{
+    height: 35px;
+    line-height: 35px;
+}
+.popup .close form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popup .close #today_close{
+    vertical-align: middle;
+}
+.popup .close label{
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.popup .close .txt_btn{
+    font-size: 12px;
+    color: #000;
+}
+
+
 /* 모바일 메뉴 사이드*/
 .m_side_wrap{
     width: calc( 100% - 30px );
