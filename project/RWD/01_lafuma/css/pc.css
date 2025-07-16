@@ -121,6 +121,7 @@ main .swiper .swiper-button-next{
     text-indent: -99999px;
     right: 30px;
 }
+
 /* 슬라이드 페이지버튼 */
 main .swiper .swiper-wrapper{
     padding-bottom: 40px;
@@ -247,6 +248,9 @@ main .snslive ul.sns_list li.facebook:hover::before{
     width: 100%;
     left: 0;
 }
+main .m_list{
+    display: none;
+}
 
 /* footer 영역 */
 footer{
@@ -353,6 +357,10 @@ footer .inner .family_box .btn_family.on{
 footer .copy{
     font-size: 12px;
     color: #b3b3b3;
+}
+
+.m_menu_wrap{
+    display: none;
 }
 
 
