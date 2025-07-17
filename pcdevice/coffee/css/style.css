@@ -31,17 +31,7 @@ body{
     font-size: 0;
 }
 
-/* 로고 */
-.header_wrap{
-    position: relative;
-}
-.header_wrap h1{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 20px;
-    z-index: 101;
-}
+
 
 
 /* 메인 슬라이드 */
