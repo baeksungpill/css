@@ -26,3 +26,28 @@ $(document).ready(function(){
     dots: true,
   });
 });
+
+// 배너슬라이드
+
+$(document).ready(function(){
+  $('.bannerslide').slick({
+    autoplay: true,
+    arrows: false,
+    dots: true,
+  });
+});
+
+// tab 기능
+$(".tab li").click(function(e){
+  // 눌렀을때 위로 올라가는거 방지
+  e.preventDefault();
+  $(".tab li").removeClass("on");
+  $(this).addClass("on");
+})
+
+// list박스를 클릭하면 onClass
+$(".content ul.list li").click(function(e){
+  e.preventDefault();
+  $(".content ul.list li").removeClass("on");
+  $(this).addClass("on");
+})
